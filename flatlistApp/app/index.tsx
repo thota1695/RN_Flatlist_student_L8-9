@@ -9,6 +9,22 @@ import colors from "../styles/colors";
 import defaultStyles from "../styles/defaultStyles";
 
 export default function Index() {
+
+  type datatype = {
+    id: string;
+    title: string;
+  };
+
+  const Data: datatype[] = [
+    {id: "1", title: "First Item"},
+    {id: "2", title: "Second Item"},
+    {id: "3", title: "Third Item"},
+  ]
+
+  const selectedList = (item: datatype)=>{
+    console.log(item.title);
+  }
+
   return (
     <View style={defaultStyles.container}>
       <View style={defaultStyles.titleContainer}>
